@@ -7,21 +7,43 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B3C9D4EF1CECD85A00F77BAB /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3C9D4EE1CECD85A00F77BAB /* Constant.swift */; };
+		B3C9D4F31CECE65600F77BAB /* UserDefaultsUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3C9D4F21CECE65600F77BAB /* UserDefaultsUtil.swift */; };
 		B3D33EBD1CEB6C56001B8B51 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3D33EBC1CEB6C56001B8B51 /* AppDelegate.swift */; };
-		B3D33EBF1CEB6C56001B8B51 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3D33EBE1CEB6C56001B8B51 /* ViewController.swift */; };
 		B3D33EC21CEB6C56001B8B51 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B3D33EC01CEB6C56001B8B51 /* Main.storyboard */; };
 		B3D33EC41CEB6C56001B8B51 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B3D33EC31CEB6C56001B8B51 /* Assets.xcassets */; };
 		B3D33EC71CEB6C56001B8B51 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B3D33EC51CEB6C56001B8B51 /* LaunchScreen.storyboard */; };
+		B3D33ED41CEB6CD9001B8B51 /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3D33ED31CEB6CD9001B8B51 /* LoginController.swift */; };
+		B3D33EDB1CEB6F15001B8B51 /* UIColor+Hex.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3D33EDA1CEB6F15001B8B51 /* UIColor+Hex.swift */; };
+		B3D33EDF1CEB7D79001B8B51 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3D33EDE1CEB7D79001B8B51 /* User.swift */; };
+		B3D33EE11CEBAB01001B8B51 /* CommonUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3D33EE01CEBAB01001B8B51 /* CommonUtil.swift */; };
+		B3D33EE31CEBAB9B001B8B51 /* StateUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3D33EE21CEBAB9B001B8B51 /* StateUtil.swift */; };
+		B3D33EEB1CEBC705001B8B51 /* SignUpClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3D33EEA1CEBC705001B8B51 /* SignUpClient.swift */; };
+		B3D33EEF1CEBC931001B8B51 /* APIInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3D33EEE1CEBC931001B8B51 /* APIInterface.swift */; };
+		B3D33EF11CEBC9F2001B8B51 /* BaseHttpRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3D33EF01CEBC9F2001B8B51 /* BaseHttpRequest.swift */; };
+		DCA519A9924F215793105678 /* Pods_QuestBoardSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7817B2EA488E5F3676C13EDF /* Pods_QuestBoardSwift.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1B8111441539E2B2FF1494A0 /* Pods-QuestBoardSwift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QuestBoardSwift.release.xcconfig"; path = "Pods/Target Support Files/Pods-QuestBoardSwift/Pods-QuestBoardSwift.release.xcconfig"; sourceTree = "<group>"; };
+		384A24F31A9BA02232458923 /* Pods-QuestBoardSwift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QuestBoardSwift.debug.xcconfig"; path = "Pods/Target Support Files/Pods-QuestBoardSwift/Pods-QuestBoardSwift.debug.xcconfig"; sourceTree = "<group>"; };
+		7817B2EA488E5F3676C13EDF /* Pods_QuestBoardSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_QuestBoardSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B3C9D4EE1CECD85A00F77BAB /* Constant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
+		B3C9D4F21CECE65600F77BAB /* UserDefaultsUtil.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserDefaultsUtil.swift; sourceTree = "<group>"; };
 		B3D33EB91CEB6C56001B8B51 /* QuestBoardSwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QuestBoardSwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B3D33EBC1CEB6C56001B8B51 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		B3D33EBE1CEB6C56001B8B51 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		B3D33EC11CEB6C56001B8B51 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B3D33EC31CEB6C56001B8B51 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B3D33EC61CEB6C56001B8B51 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B3D33EC81CEB6C56001B8B51 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B3D33ED31CEB6CD9001B8B51 /* LoginController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
+		B3D33EDA1CEB6F15001B8B51 /* UIColor+Hex.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Hex.swift"; sourceTree = "<group>"; };
+		B3D33EDE1CEB7D79001B8B51 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		B3D33EE01CEBAB01001B8B51 /* CommonUtil.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommonUtil.swift; sourceTree = "<group>"; };
+		B3D33EE21CEBAB9B001B8B51 /* StateUtil.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StateUtil.swift; sourceTree = "<group>"; };
+		B3D33EEA1CEBC705001B8B51 /* SignUpClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpClient.swift; sourceTree = "<group>"; };
+		B3D33EEE1CEBC931001B8B51 /* APIInterface.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIInterface.swift; sourceTree = "<group>"; };
+		B3D33EF01CEBC9F2001B8B51 /* BaseHttpRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseHttpRequest.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +51,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DCA519A9924F215793105678 /* Pods_QuestBoardSwift.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		74E0B142664094FC78D55B65 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7817B2EA488E5F3676C13EDF /* Pods_QuestBoardSwift.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		970B68071F9C5B5F0CDCA3D5 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				384A24F31A9BA02232458923 /* Pods-QuestBoardSwift.debug.xcconfig */,
+				1B8111441539E2B2FF1494A0 /* Pods-QuestBoardSwift.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		B3D33EB01CEB6C56001B8B51 = {
 			isa = PBXGroup;
 			children = (
 				B3D33EBB1CEB6C56001B8B51 /* QuestBoardSwift */,
 				B3D33EBA1CEB6C56001B8B51 /* Products */,
+				970B68071F9C5B5F0CDCA3D5 /* Pods */,
+				74E0B142664094FC78D55B65 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,14 +96,79 @@
 		B3D33EBB1CEB6C56001B8B51 /* QuestBoardSwift */ = {
 			isa = PBXGroup;
 			children = (
-				B3D33EBC1CEB6C56001B8B51 /* AppDelegate.swift */,
-				B3D33EBE1CEB6C56001B8B51 /* ViewController.swift */,
+				B3D33ECE1CEB6C8D001B8B51 /* Model */,
+				B3D33ED11CEB6CAF001B8B51 /* Controllers */,
+				B3D33ED01CEB6C99001B8B51 /* Http */,
+				B3D33ECF1CEB6C94001B8B51 /* Util */,
 				B3D33EC01CEB6C56001B8B51 /* Main.storyboard */,
 				B3D33EC31CEB6C56001B8B51 /* Assets.xcassets */,
 				B3D33EC51CEB6C56001B8B51 /* LaunchScreen.storyboard */,
+				B3D33EBC1CEB6C56001B8B51 /* AppDelegate.swift */,
 				B3D33EC81CEB6C56001B8B51 /* Info.plist */,
 			);
 			path = QuestBoardSwift;
+			sourceTree = "<group>";
+		};
+		B3D33ECE1CEB6C8D001B8B51 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				B3D33EDE1CEB7D79001B8B51 /* User.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		B3D33ECF1CEB6C94001B8B51 /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				B3D33ED51CEB6D27001B8B51 /* Extension */,
+				B3D33EE01CEBAB01001B8B51 /* CommonUtil.swift */,
+				B3D33EE21CEBAB9B001B8B51 /* StateUtil.swift */,
+				B3C9D4EE1CECD85A00F77BAB /* Constant.swift */,
+				B3C9D4F21CECE65600F77BAB /* UserDefaultsUtil.swift */,
+			);
+			name = Util;
+			sourceTree = "<group>";
+		};
+		B3D33ED01CEB6C99001B8B51 /* Http */ = {
+			isa = PBXGroup;
+			children = (
+				B3D33EE71CEBC6BD001B8B51 /* Client */,
+				B3D33EEE1CEBC931001B8B51 /* APIInterface.swift */,
+				B3D33EF01CEBC9F2001B8B51 /* BaseHttpRequest.swift */,
+			);
+			name = Http;
+			sourceTree = "<group>";
+		};
+		B3D33ED11CEB6CAF001B8B51 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				B3D33ED21CEB6CBD001B8B51 /* LoginController */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		B3D33ED21CEB6CBD001B8B51 /* LoginController */ = {
+			isa = PBXGroup;
+			children = (
+				B3D33ED31CEB6CD9001B8B51 /* LoginController.swift */,
+			);
+			name = LoginController;
+			sourceTree = "<group>";
+		};
+		B3D33ED51CEB6D27001B8B51 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				B3D33EDA1CEB6F15001B8B51 /* UIColor+Hex.swift */,
+			);
+			name = Extension;
+			sourceTree = "<group>";
+		};
+		B3D33EE71CEBC6BD001B8B51 /* Client */ = {
+			isa = PBXGroup;
+			children = (
+				B3D33EEA1CEBC705001B8B51 /* SignUpClient.swift */,
+			);
+			name = Client;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +178,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B3D33ECB1CEB6C56001B8B51 /* Build configuration list for PBXNativeTarget "QuestBoardSwift" */;
 			buildPhases = (
+				AB9973AFCDD87A023023C652 /* 📦 Check Pods Manifest.lock */,
 				B3D33EB51CEB6C56001B8B51 /* Sources */,
 				B3D33EB61CEB6C56001B8B51 /* Frameworks */,
 				B3D33EB71CEB6C56001B8B51 /* Resources */,
+				8BB1CA8CB4A5AC44209838AA /* 📦 Embed Pods Frameworks */,
+				2FBB92A26DB10616074CD1EA /* 📦 Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -130,13 +240,70 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		2FBB92A26DB10616074CD1EA /* 📦 Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-QuestBoardSwift/Pods-QuestBoardSwift-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8BB1CA8CB4A5AC44209838AA /* 📦 Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-QuestBoardSwift/Pods-QuestBoardSwift-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AB9973AFCDD87A023023C652 /* 📦 Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		B3D33EB51CEB6C56001B8B51 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B3D33EBF1CEB6C56001B8B51 /* ViewController.swift in Sources */,
+				B3D33EEF1CEBC931001B8B51 /* APIInterface.swift in Sources */,
+				B3D33EDF1CEB7D79001B8B51 /* User.swift in Sources */,
+				B3D33EDB1CEB6F15001B8B51 /* UIColor+Hex.swift in Sources */,
+				B3D33EEB1CEBC705001B8B51 /* SignUpClient.swift in Sources */,
+				B3D33ED41CEB6CD9001B8B51 /* LoginController.swift in Sources */,
+				B3D33EF11CEBC9F2001B8B51 /* BaseHttpRequest.swift in Sources */,
+				B3D33EE11CEBAB01001B8B51 /* CommonUtil.swift in Sources */,
+				B3C9D4EF1CECD85A00F77BAB /* Constant.swift in Sources */,
 				B3D33EBD1CEB6C56001B8B51 /* AppDelegate.swift in Sources */,
+				B3C9D4F31CECE65600F77BAB /* UserDefaultsUtil.swift in Sources */,
+				B3D33EE31CEBAB9B001B8B51 /* StateUtil.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -247,23 +414,27 @@
 		};
 		B3D33ECC1CEB6C56001B8B51 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 384A24F31A9BA02232458923 /* Pods-QuestBoardSwift.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = QuestBoardSwift/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.fengchang.QuestBoardSwift;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
 			};
 			name = Debug;
 		};
 		B3D33ECD1CEB6C56001B8B51 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1B8111441539E2B2FF1494A0 /* Pods-QuestBoardSwift.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = QuestBoardSwift/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.fengchang.QuestBoardSwift;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
 			};
 			name = Release;
 		};
@@ -286,6 +457,7 @@
 				B3D33ECD1CEB6C56001B8B51 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
