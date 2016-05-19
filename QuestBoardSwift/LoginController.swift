@@ -44,7 +44,7 @@ class LoginController: UIViewController, UITextViewDelegate {
             SVProgressHUD.setDefaultMaskType(SVProgressHUDMaskType.Black)
             SVProgressHUD.show()
             SignUpClient.signUp(user, success: { (success) in
-                SVProgressHUD.showInfoWithStatus("message")
+                SVProgressHUD.showInfoWithStatus("success")
                 if !isFromLogOut {
                     self.dismissViewControllerAnimated(true, completion: { 
                         

@@ -262,16 +262,93 @@
         <!--Root View Controller-->
         <scene sceneID="YDd-JZ-HTx">
             <objects>
-                <tableViewController id="E5b-hx-0UN" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="bB4-oX-YqQ">
+                <tableViewController storyboardIdentifier="KingdomsController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="E5b-hx-0UN" customClass="KingdomsController" customModule="QuestBoardSwift" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="114" sectionHeaderHeight="28" sectionFooterHeight="28" id="bB4-oX-YqQ">
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="2tj-Hs-H4e">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="KingdomCell" rowHeight="100" id="2tj-Hs-H4e" customClass="KingdomCell" customModule="QuestBoardSwift" customModuleProvider="target">
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="2tj-Hs-H4e" id="nYE-fy-HtI">
                                     <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="OuN-Fc-rod">
+                                            <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="50" id="Z0z-Cg-2a8"/>
+                                                <constraint firstAttribute="height" constant="50" id="z2D-XL-cSP"/>
+                                            </constraints>
+                                            <variation key="default">
+                                                <mask key="constraints">
+                                                    <exclude reference="Z0z-Cg-2a8"/>
+                                                    <exclude reference="z2D-XL-cSP"/>
+                                                </mask>
+                                            </variation>
+                                            <variation key="widthClass=compact">
+                                                <mask key="constraints">
+                                                    <include reference="Z0z-Cg-2a8"/>
+                                                    <include reference="z2D-XL-cSP"/>
+                                                </mask>
+                                            </variation>
+                                        </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="49G-pA-mNu">
+                                            <rect key="frame" x="-42" y="-21" width="42" height="21"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="21" id="fxz-9d-Q70"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <nil key="highlightedColor"/>
+                                            <variation key="default">
+                                                <mask key="constraints">
+                                                    <exclude reference="fxz-9d-Q70"/>
+                                                </mask>
+                                            </variation>
+                                            <variation key="widthClass=compact">
+                                                <mask key="constraints">
+                                                    <exclude reference="fxz-9d-Q70"/>
+                                                </mask>
+                                            </variation>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="49G-pA-mNu" firstAttribute="leading" secondItem="OuN-Fc-rod" secondAttribute="trailing" constant="16" id="6Z7-gk-tEb"/>
+                                        <constraint firstAttribute="bottom" secondItem="49G-pA-mNu" secondAttribute="bottom" constant="39.5" id="NIN-nF-190"/>
+                                        <constraint firstItem="OuN-Fc-rod" firstAttribute="leading" secondItem="nYE-fy-HtI" secondAttribute="leading" constant="20" id="ZWx-a9-7cH"/>
+                                        <constraint firstAttribute="trailing" secondItem="49G-pA-mNu" secondAttribute="trailing" constant="8" id="cQ8-a9-8Hq"/>
+                                        <constraint firstItem="OuN-Fc-rod" firstAttribute="top" secondItem="nYE-fy-HtI" secondAttribute="top" constant="25" id="w1S-2x-QPP"/>
+                                    </constraints>
+                                    <variation key="default">
+                                        <mask key="subviews">
+                                            <exclude reference="OuN-Fc-rod"/>
+                                            <exclude reference="49G-pA-mNu"/>
+                                        </mask>
+                                        <mask key="constraints">
+                                            <exclude reference="ZWx-a9-7cH"/>
+                                            <exclude reference="w1S-2x-QPP"/>
+                                            <exclude reference="6Z7-gk-tEb"/>
+                                            <exclude reference="NIN-nF-190"/>
+                                            <exclude reference="cQ8-a9-8Hq"/>
+                                        </mask>
+                                    </variation>
+                                    <variation key="widthClass=compact">
+                                        <mask key="subviews">
+                                            <include reference="OuN-Fc-rod"/>
+                                            <include reference="49G-pA-mNu"/>
+                                        </mask>
+                                        <mask key="constraints">
+                                            <include reference="ZWx-a9-7cH"/>
+                                            <include reference="w1S-2x-QPP"/>
+                                            <include reference="6Z7-gk-tEb"/>
+                                            <include reference="NIN-nF-190"/>
+                                            <include reference="cQ8-a9-8Hq"/>
+                                        </mask>
+                                    </variation>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="kImageView" destination="nYE-fy-HtI" id="LNy-42-B6k"/>
+                                    <outlet property="kNameLabel" destination="49G-pA-mNu" id="JkA-qq-DXG"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -279,7 +356,13 @@
                             <outlet property="delegate" destination="E5b-hx-0UN" id="Nzx-xx-MIU"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Root View Controller" id="1sB-Lc-dhh"/>
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" title="Root View Controller" id="1sB-Lc-dhh">
+                        <barButtonItem key="rightBarButtonItem" title="Log Out" id="Imd-n7-pQN">
+                            <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </barButtonItem>
+                    </navigationItem>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wA5-Du-wJ7" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

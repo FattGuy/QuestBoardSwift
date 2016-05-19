@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		B3C9D4EF1CECD85A00F77BAB /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3C9D4EE1CECD85A00F77BAB /* Constant.swift */; };
 		B3C9D4F31CECE65600F77BAB /* UserDefaultsUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3C9D4F21CECE65600F77BAB /* UserDefaultsUtil.swift */; };
+		B3C9D4F91CED0A2500F77BAB /* KingdomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3C9D4F81CED0A2500F77BAB /* KingdomCell.swift */; };
+		B3C9D4FB1CED0A3E00F77BAB /* KingdomsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3C9D4FA1CED0A3E00F77BAB /* KingdomsController.swift */; };
+		B3C9D5011CED67A800F77BAB /* Kingdom.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3C9D5001CED67A800F77BAB /* Kingdom.swift */; };
 		B3D33EBD1CEB6C56001B8B51 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3D33EBC1CEB6C56001B8B51 /* AppDelegate.swift */; };
 		B3D33EC21CEB6C56001B8B51 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B3D33EC01CEB6C56001B8B51 /* Main.storyboard */; };
 		B3D33EC41CEB6C56001B8B51 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B3D33EC31CEB6C56001B8B51 /* Assets.xcassets */; };
@@ -30,6 +33,9 @@
 		7817B2EA488E5F3676C13EDF /* Pods_QuestBoardSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_QuestBoardSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B3C9D4EE1CECD85A00F77BAB /* Constant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
 		B3C9D4F21CECE65600F77BAB /* UserDefaultsUtil.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserDefaultsUtil.swift; sourceTree = "<group>"; };
+		B3C9D4F81CED0A2500F77BAB /* KingdomCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KingdomCell.swift; sourceTree = "<group>"; };
+		B3C9D4FA1CED0A3E00F77BAB /* KingdomsController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KingdomsController.swift; sourceTree = "<group>"; };
+		B3C9D5001CED67A800F77BAB /* Kingdom.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Kingdom.swift; sourceTree = "<group>"; };
 		B3D33EB91CEB6C56001B8B51 /* QuestBoardSwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QuestBoardSwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B3D33EBC1CEB6C56001B8B51 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B3D33EC11CEB6C56001B8B51 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -75,6 +81,23 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		B3C9D4F41CED09D000F77BAB /* KindomsController */ = {
+			isa = PBXGroup;
+			children = (
+				B3C9D4F51CED09DD00F77BAB /* Cell */,
+				B3C9D4FA1CED0A3E00F77BAB /* KingdomsController.swift */,
+			);
+			name = KindomsController;
+			sourceTree = "<group>";
+		};
+		B3C9D4F51CED09DD00F77BAB /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				B3C9D4F81CED0A2500F77BAB /* KingdomCell.swift */,
+			);
+			name = Cell;
+			sourceTree = "<group>";
+		};
 		B3D33EB01CEB6C56001B8B51 = {
 			isa = PBXGroup;
 			children = (
@@ -113,6 +136,7 @@
 			isa = PBXGroup;
 			children = (
 				B3D33EDE1CEB7D79001B8B51 /* User.swift */,
+				B3C9D5001CED67A800F77BAB /* Kingdom.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -142,6 +166,7 @@
 		B3D33ED11CEB6CAF001B8B51 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				B3C9D4F41CED09D000F77BAB /* KindomsController */,
 				B3D33ED21CEB6CBD001B8B51 /* LoginController */,
 			);
 			name = Controllers;
@@ -295,9 +320,12 @@
 			files = (
 				B3D33EEF1CEBC931001B8B51 /* APIInterface.swift in Sources */,
 				B3D33EDF1CEB7D79001B8B51 /* User.swift in Sources */,
+				B3C9D4FB1CED0A3E00F77BAB /* KingdomsController.swift in Sources */,
+				B3C9D5011CED67A800F77BAB /* Kingdom.swift in Sources */,
 				B3D33EDB1CEB6F15001B8B51 /* UIColor+Hex.swift in Sources */,
 				B3D33EEB1CEBC705001B8B51 /* SignUpClient.swift in Sources */,
 				B3D33ED41CEB6CD9001B8B51 /* LoginController.swift in Sources */,
+				B3C9D4F91CED0A2500F77BAB /* KingdomCell.swift in Sources */,
 				B3D33EF11CEBC9F2001B8B51 /* BaseHttpRequest.swift in Sources */,
 				B3D33EE11CEBAB01001B8B51 /* CommonUtil.swift in Sources */,
 				B3C9D4EF1CECD85A00F77BAB /* Constant.swift in Sources */,
