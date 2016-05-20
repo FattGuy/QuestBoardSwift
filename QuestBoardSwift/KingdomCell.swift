@@ -9,13 +9,15 @@
 import UIKit
 import SDWebImage
 
+
 class KingdomCell: UITableViewCell {
 
-    @IBOutlet weak var kImageView: UIView!
+    @IBOutlet weak var kImageView: UIImageView!
     @IBOutlet weak var kNameLabel: UILabel!
     
     func setCellValue(kingdom: Kingdom) -> Void {
-        self.kImageView.sd_setImageLoadOperation(kingdom.imageURL, forKey: "image")
+        self.kImageView.setImageWithURL(kingdom.imageURL!)
+        
         self.kNameLabel.text = kingdom.kingdomName
     }
     

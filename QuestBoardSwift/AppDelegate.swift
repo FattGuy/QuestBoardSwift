@@ -17,8 +17,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
         
-        if let email: String = UserDefaultsUtil.getEmail() {
-            
+        let email = UserDefaultsUtil.getEmail()
+        
+        if email != "" {
+            let storyboard: UIStoryboard = UIStoryboard.init(name: "Main", bundle: NSBundle.mainBundle())
+            let nav = storyboard.instantiateViewControllerWithIdentifier("MainNavigationController")
+            self.window!.rootViewController = nav
         }
         
         return true

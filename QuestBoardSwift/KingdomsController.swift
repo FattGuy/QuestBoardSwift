@@ -40,11 +40,11 @@ class KingdomsController: UITableViewController {
         SVProgressHUD.setDefaultMaskType(SVProgressHUDMaskType.Black)
         SVProgressHUD.showWithStatus("Loading")
         
-        KingdomClient.getEmailList { (success) in
+        KingdomClient.getEmailList { [weak self] (success) in
             SVProgressHUD.dismiss()
-            
+            self!.kingdomList = success as! Array
             //print(success)
-            self.tableView.reloadData()
+            self!.tableView.reloadData()
         }
         
     }
@@ -82,7 +82,7 @@ class KingdomsController: UITableViewController {
  
     override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         tableView.deselectRowAtIndexPath(indexPath, animated: true)
-        
+
     }
 
     /*
@@ -120,14 +120,23 @@ class KingdomsController: UITableViewController {
     }
     */
 
-    /*
+    
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         // Get the new view controller using segue.destinationViewController.
         // Pass the selected object to the new view controller.
+        if segue.identifier == "KingdomDetailSegue",
+            let destination = segue.destinationViewController as? KingdomDetailController,
+            selectedIndex = tableView.indexPathForSelectedRow?.row
+            {
+                destination.navigationItem.title = kingdomList[selectedIndex].kingdomName
+               
+                self.performSegueWithIdentifier("KingdomDetailSegue", sender: nil)
+            }
     }
-    */
-
 }
+ 
+
+

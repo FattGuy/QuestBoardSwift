@@ -27,6 +27,7 @@
 		DCA519A9924F215793105678 /* Pods_QuestBoardSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7817B2EA488E5F3676C13EDF /* Pods_QuestBoardSwift.framework */; };
 		F218BBEA1CEF6F0300C2952A /* BaseNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F218BBE91CEF6F0300C2952A /* BaseNavigationController.swift */; };
 		F288FBD11CEF53B00004A719 /* SJModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F288FBD01CEF53B00004A719 /* SJModel.swift */; };
+		F2E01A441CEFAA27000D3423 /* KingdomDetailController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2E01A431CEFAA26000D3423 /* KingdomDetailController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -54,6 +55,7 @@
 		B3D33EF01CEBC9F2001B8B51 /* BaseHttpRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseHttpRequest.swift; sourceTree = "<group>"; };
 		F218BBE91CEF6F0300C2952A /* BaseNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseNavigationController.swift; sourceTree = "<group>"; };
 		F288FBD01CEF53B00004A719 /* SJModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SJModel.swift; sourceTree = "<group>"; };
+		F2E01A431CEFAA26000D3423 /* KingdomDetailController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KingdomDetailController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -170,6 +172,7 @@
 		B3D33ED11CEB6CAF001B8B51 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				F2E01A421CEFA9E5000D3423 /* KingdomDetailController */,
 				F218BBE81CEF6EC600C2952A /* BaseController */,
 				B3C9D4F41CED09D000F77BAB /* KindomsController */,
 				B3D33ED21CEB6CBD001B8B51 /* LoginController */,
@@ -208,6 +211,22 @@
 				F288FBD01CEF53B00004A719 /* SJModel.swift */,
 			);
 			name = myLib;
+			sourceTree = "<group>";
+		};
+		F2E01A421CEFA9E5000D3423 /* KingdomDetailController */ = {
+			isa = PBXGroup;
+			children = (
+				F2E01A451CEFB139000D3423 /* SwipeView */,
+				F2E01A431CEFAA26000D3423 /* KingdomDetailController.swift */,
+			);
+			name = KingdomDetailController;
+			sourceTree = "<group>";
+		};
+		F2E01A451CEFB139000D3423 /* SwipeView */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = SwipeView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -346,6 +365,7 @@
 				B3C9D4EF1CECD85A00F77BAB /* Constant.swift in Sources */,
 				B3D33EBD1CEB6C56001B8B51 /* AppDelegate.swift in Sources */,
 				F218BBEA1CEF6F0300C2952A /* BaseNavigationController.swift in Sources */,
+				F2E01A441CEFAA27000D3423 /* KingdomDetailController.swift in Sources */,
 				B3C9D4F31CECE65600F77BAB /* UserDefaultsUtil.swift in Sources */,
 				B3D33EE31CEBAB9B001B8B51 /* StateUtil.swift in Sources */,
 			);
@@ -461,11 +481,13 @@
 			baseConfigurationReference = 384A24F31A9BA02232458923 /* Pods-QuestBoardSwift.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = QuestBoardSwift/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.fengchang.QuestBoardSwift;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -474,6 +496,7 @@
 			baseConfigurationReference = 1B8111441539E2B2FF1494A0 /* Pods-QuestBoardSwift.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = QuestBoardSwift/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.fengchang.QuestBoardSwift;
