@@ -42,8 +42,9 @@ class KingdomsController: UITableViewController {
         KingdomClient.getEmailList { (success) in
             SVProgressHUD.dismiss()
             
-            let kingdom = Kingdom(json: success as! JSON)
-            self.kingdomList.append(kingdom!)
+            if let kingdomList = Kingdom(json: success as! JSON) {
+                print(kingdomList.kingdomId)
+            }
             
             self.tableView.reloadData()
         }
