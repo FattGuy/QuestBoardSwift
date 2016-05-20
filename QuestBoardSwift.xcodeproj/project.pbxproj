@@ -25,6 +25,7 @@
 		B3D33EEF1CEBC931001B8B51 /* APIInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3D33EEE1CEBC931001B8B51 /* APIInterface.swift */; };
 		B3D33EF11CEBC9F2001B8B51 /* BaseHttpRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3D33EF01CEBC9F2001B8B51 /* BaseHttpRequest.swift */; };
 		DCA519A9924F215793105678 /* Pods_QuestBoardSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7817B2EA488E5F3676C13EDF /* Pods_QuestBoardSwift.framework */; };
+		F288FBD11CEF53B00004A719 /* SJModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F288FBD01CEF53B00004A719 /* SJModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -50,6 +51,7 @@
 		B3D33EEA1CEBC705001B8B51 /* SignUpClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpClient.swift; sourceTree = "<group>"; };
 		B3D33EEE1CEBC931001B8B51 /* APIInterface.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIInterface.swift; sourceTree = "<group>"; };
 		B3D33EF01CEBC9F2001B8B51 /* BaseHttpRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseHttpRequest.swift; sourceTree = "<group>"; };
+		F288FBD01CEF53B00004A719 /* SJModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SJModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,6 +121,7 @@
 		B3D33EBB1CEB6C56001B8B51 /* QuestBoardSwift */ = {
 			isa = PBXGroup;
 			children = (
+				F288FBCF1CEF53A10004A719 /* myLib */,
 				B3D33ECE1CEB6C8D001B8B51 /* Model */,
 				B3D33ED11CEB6CAF001B8B51 /* Controllers */,
 				B3D33ED01CEB6C99001B8B51 /* Http */,
@@ -194,6 +197,14 @@
 				B3D33EEA1CEBC705001B8B51 /* SignUpClient.swift */,
 			);
 			name = Client;
+			sourceTree = "<group>";
+		};
+		F288FBCF1CEF53A10004A719 /* myLib */ = {
+			isa = PBXGroup;
+			children = (
+				F288FBD01CEF53B00004A719 /* SJModel.swift */,
+			);
+			name = myLib;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -326,6 +337,7 @@
 				B3D33EEB1CEBC705001B8B51 /* SignUpClient.swift in Sources */,
 				B3D33ED41CEB6CD9001B8B51 /* LoginController.swift in Sources */,
 				B3C9D4F91CED0A2500F77BAB /* KingdomCell.swift in Sources */,
+				F288FBD11CEF53B00004A719 /* SJModel.swift in Sources */,
 				B3D33EF11CEBC9F2001B8B51 /* BaseHttpRequest.swift in Sources */,
 				B3D33EE11CEBAB01001B8B51 /* CommonUtil.swift in Sources */,
 				B3C9D4EF1CECD85A00F77BAB /* Constant.swift in Sources */,
