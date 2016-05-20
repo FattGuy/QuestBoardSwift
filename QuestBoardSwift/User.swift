@@ -9,10 +9,13 @@
 import UIKit
 
 class User: NSObject {
-    var name: String
-    var email: String
+    var name: String!
+    var email: String!
     
     init(name: String, email: String) {
+        
+        super.init()
+        
         self.name = name
         self.email = email
     }

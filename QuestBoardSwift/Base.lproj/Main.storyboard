@@ -264,12 +264,15 @@
             <objects>
                 <tableViewController storyboardIdentifier="KingdomsController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="E5b-hx-0UN" customClass="KingdomsController" customModule="QuestBoardSwift" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="114" sectionHeaderHeight="28" sectionFooterHeight="28" id="bB4-oX-YqQ">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="KingdomCell" rowHeight="100" id="2tj-Hs-H4e" customClass="KingdomCell" customModule="QuestBoardSwift" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="92" width="600" height="100"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="2tj-Hs-H4e" id="nYE-fy-HtI">
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="99.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="OuN-Fc-rod">
@@ -297,7 +300,7 @@
                                                 <constraint firstAttribute="height" constant="21" id="fxz-9d-Q70"/>
                                             </constraints>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                             <variation key="default">
                                                 <mask key="constraints">
@@ -324,11 +327,11 @@
                                             <exclude reference="49G-pA-mNu"/>
                                         </mask>
                                         <mask key="constraints">
-                                            <exclude reference="ZWx-a9-7cH"/>
-                                            <exclude reference="w1S-2x-QPP"/>
                                             <exclude reference="6Z7-gk-tEb"/>
                                             <exclude reference="NIN-nF-190"/>
                                             <exclude reference="cQ8-a9-8Hq"/>
+                                            <exclude reference="ZWx-a9-7cH"/>
+                                            <exclude reference="w1S-2x-QPP"/>
                                         </mask>
                                     </variation>
                                     <variation key="widthClass=compact">
@@ -337,11 +340,11 @@
                                             <include reference="49G-pA-mNu"/>
                                         </mask>
                                         <mask key="constraints">
-                                            <include reference="ZWx-a9-7cH"/>
-                                            <include reference="w1S-2x-QPP"/>
                                             <include reference="6Z7-gk-tEb"/>
                                             <include reference="NIN-nF-190"/>
                                             <include reference="cQ8-a9-8Hq"/>
+                                            <include reference="ZWx-a9-7cH"/>
+                                            <include reference="w1S-2x-QPP"/>
                                         </mask>
                                     </variation>
                                 </tableViewCellContentView>
@@ -360,6 +363,9 @@
                     <navigationItem key="navigationItem" title="Root View Controller" id="1sB-Lc-dhh">
                         <barButtonItem key="rightBarButtonItem" title="Log Out" id="Imd-n7-pQN">
                             <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <connections>
+                                <action selector="logOutAction:" destination="E5b-hx-0UN" id="HLq-0L-U6M"/>
+                            </connections>
                         </barButtonItem>
                     </navigationItem>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>

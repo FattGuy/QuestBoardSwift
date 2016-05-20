@@ -14,6 +14,9 @@ class LoginController: UIViewController, UITextViewDelegate {
     @IBOutlet weak var nameTextField: UITextField!
     @IBOutlet weak var emailTextField: UITextField!
     
+    var isFromLogOut: Bool = false
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -38,14 +41,14 @@ class LoginController: UIViewController, UITextViewDelegate {
         
         let state: SignUpState = CommonUtil.isValidEmail(user.email)
         
-        let isFromLogOut: Bool = true
+        //let isFromLogOut: Bool = true
         
         if state == SignUpState.Correct {
             SVProgressHUD.setDefaultMaskType(SVProgressHUDMaskType.Black)
             SVProgressHUD.show()
             SignUpClient.signUp(user, success: { (success) in
                 SVProgressHUD.showInfoWithStatus("success")
-                if !isFromLogOut {
+                if self.isFromLogOut {
                     self.dismissViewControllerAnimated(true, completion: { 
                         
                     })

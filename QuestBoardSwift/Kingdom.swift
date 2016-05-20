@@ -21,4 +21,11 @@ class Kingdom: Decodable {
         self.imageURL = "image" <~~ json
     }
     
+    func toJSON() -> JSON? {
+        return jsonify([
+            "id" ~~> self.kingdomId,
+            "name" ~~> self.kingdomName,
+            "image" ~~> self.imageURL
+            ])
+    }
 }
