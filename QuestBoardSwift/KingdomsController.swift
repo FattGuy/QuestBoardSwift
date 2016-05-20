@@ -11,6 +11,7 @@ import SVProgressHUD
 import Gloss
 
 class KingdomsController: UITableViewController {
+    
     var kingdomList: Array<Kingdom> = []
     
     override func viewDidLoad() {
@@ -42,10 +43,7 @@ class KingdomsController: UITableViewController {
         KingdomClient.getEmailList { (success) in
             SVProgressHUD.dismiss()
             
-            if let kingdomList = Kingdom(json: success as! JSON) {
-                print(kingdomList.kingdomId)
-            }
-            
+            //print(success)
             self.tableView.reloadData()
         }
         
@@ -66,22 +64,26 @@ class KingdomsController: UITableViewController {
     @IBAction func logOutAction(sender: AnyObject) {
         UserDefaultsUtil.saveEmail("")
         
-        let loginController = UIStoryboard(name: "KingdomsController", bundle: nil).instantiateViewControllerWithIdentifier("LoginController") as UIViewController
+        let loginController: LoginController = self.storyboard!.instantiateViewControllerWithIdentifier("LoginController") as! LoginController
         //loginController.isFromLogOut = true;
         self.navigationController?.presentViewController(loginController, animated: true, completion: { 
             
         })
         
     }
-    /*
+    
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCellWithIdentifier("reuseIdentifier", forIndexPath: indexPath)
-
-        // Configure the cell...
+        let cell:KingdomCell = tableView.dequeueReusableCellWithIdentifier("KingdomCell", forIndexPath: indexPath) as! KingdomCell
+        //Configure the cell...
+        cell.setCellValue(kingdomList[indexPath.row])
 
         return cell
     }
-    */
+ 
+    override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        tableView.deselectRowAtIndexPath(indexPath, animated: true)
+        
+    }
 
     /*
     // Override to support conditional editing of the table view.

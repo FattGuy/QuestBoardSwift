@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Gloss
 
 class KingdomClient: NSObject {
 
@@ -18,7 +19,20 @@ class KingdomClient: NSObject {
         let params: NSMutableDictionary = [:]
         
         BaseHttpRequest.shareInstance.myGET(Url, parameters: params) { (response) in
-            success(success: response)
+            
+            var mutArray = Array<Kingdom>()
+            
+            if response is Array <JSON> {
+                
+                
+                for jsonObj in response as! Array<JSON> {
+                    
+                    if let kingdomList = Kingdom(json: jsonObj) {
+                        mutArray.append(kingdomList)
+                    }
+                }
+            }
+            success(success: mutArray)
         }
     }
 }

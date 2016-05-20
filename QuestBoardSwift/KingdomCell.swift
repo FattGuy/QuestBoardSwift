@@ -16,6 +16,7 @@ class KingdomCell: UITableViewCell {
     
     func setCellValue(kingdom: Kingdom) -> Void {
         self.kImageView.sd_setImageLoadOperation(kingdom.imageURL, forKey: "image")
+        self.kNameLabel.text = kingdom.kingdomName
     }
     
     override func awakeFromNib() {

@@ -18,7 +18,6 @@
 		B3D33EC41CEB6C56001B8B51 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B3D33EC31CEB6C56001B8B51 /* Assets.xcassets */; };
 		B3D33EC71CEB6C56001B8B51 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B3D33EC51CEB6C56001B8B51 /* LaunchScreen.storyboard */; };
 		B3D33ED41CEB6CD9001B8B51 /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3D33ED31CEB6CD9001B8B51 /* LoginController.swift */; };
-		B3D33EDB1CEB6F15001B8B51 /* UIColor+Hex.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3D33EDA1CEB6F15001B8B51 /* UIColor+Hex.swift */; };
 		B3D33EDF1CEB7D79001B8B51 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3D33EDE1CEB7D79001B8B51 /* User.swift */; };
 		B3D33EE11CEBAB01001B8B51 /* CommonUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3D33EE01CEBAB01001B8B51 /* CommonUtil.swift */; };
 		B3D33EE31CEBAB9B001B8B51 /* StateUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3D33EE21CEBAB9B001B8B51 /* StateUtil.swift */; };
@@ -26,6 +25,7 @@
 		B3D33EEF1CEBC931001B8B51 /* APIInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3D33EEE1CEBC931001B8B51 /* APIInterface.swift */; };
 		B3D33EF11CEBC9F2001B8B51 /* BaseHttpRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3D33EF01CEBC9F2001B8B51 /* BaseHttpRequest.swift */; };
 		DCA519A9924F215793105678 /* Pods_QuestBoardSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7817B2EA488E5F3676C13EDF /* Pods_QuestBoardSwift.framework */; };
+		F218BBEA1CEF6F0300C2952A /* BaseNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F218BBE91CEF6F0300C2952A /* BaseNavigationController.swift */; };
 		F288FBD11CEF53B00004A719 /* SJModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F288FBD01CEF53B00004A719 /* SJModel.swift */; };
 /* End PBXBuildFile section */
 
@@ -46,13 +46,13 @@
 		B3D33EC61CEB6C56001B8B51 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B3D33EC81CEB6C56001B8B51 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B3D33ED31CEB6CD9001B8B51 /* LoginController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
-		B3D33EDA1CEB6F15001B8B51 /* UIColor+Hex.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Hex.swift"; sourceTree = "<group>"; };
 		B3D33EDE1CEB7D79001B8B51 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		B3D33EE01CEBAB01001B8B51 /* CommonUtil.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommonUtil.swift; sourceTree = "<group>"; };
 		B3D33EE21CEBAB9B001B8B51 /* StateUtil.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StateUtil.swift; sourceTree = "<group>"; };
 		B3D33EEA1CEBC705001B8B51 /* SignUpClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpClient.swift; sourceTree = "<group>"; };
 		B3D33EEE1CEBC931001B8B51 /* APIInterface.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIInterface.swift; sourceTree = "<group>"; };
 		B3D33EF01CEBC9F2001B8B51 /* BaseHttpRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseHttpRequest.swift; sourceTree = "<group>"; };
+		F218BBE91CEF6F0300C2952A /* BaseNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseNavigationController.swift; sourceTree = "<group>"; };
 		F288FBD01CEF53B00004A719 /* SJModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SJModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -149,7 +149,6 @@
 		B3D33ECF1CEB6C94001B8B51 /* Util */ = {
 			isa = PBXGroup;
 			children = (
-				B3D33ED51CEB6D27001B8B51 /* Extension */,
 				B3D33EE01CEBAB01001B8B51 /* CommonUtil.swift */,
 				B3D33EE21CEBAB9B001B8B51 /* StateUtil.swift */,
 				B3C9D4EE1CECD85A00F77BAB /* Constant.swift */,
@@ -171,6 +170,7 @@
 		B3D33ED11CEB6CAF001B8B51 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				F218BBE81CEF6EC600C2952A /* BaseController */,
 				B3C9D4F41CED09D000F77BAB /* KindomsController */,
 				B3D33ED21CEB6CBD001B8B51 /* LoginController */,
 			);
@@ -185,14 +185,6 @@
 			name = LoginController;
 			sourceTree = "<group>";
 		};
-		B3D33ED51CEB6D27001B8B51 /* Extension */ = {
-			isa = PBXGroup;
-			children = (
-				B3D33EDA1CEB6F15001B8B51 /* UIColor+Hex.swift */,
-			);
-			name = Extension;
-			sourceTree = "<group>";
-		};
 		B3D33EE71CEBC6BD001B8B51 /* Client */ = {
 			isa = PBXGroup;
 			children = (
@@ -200,6 +192,14 @@
 				B3BB09941CEE0CD700C2A59D /* KingdomClient.swift */,
 			);
 			name = Client;
+			sourceTree = "<group>";
+		};
+		F218BBE81CEF6EC600C2952A /* BaseController */ = {
+			isa = PBXGroup;
+			children = (
+				F218BBE91CEF6F0300C2952A /* BaseNavigationController.swift */,
+			);
+			name = BaseController;
 			sourceTree = "<group>";
 		};
 		F288FBCF1CEF53A10004A719 /* myLib */ = {
@@ -336,7 +336,6 @@
 				B3D33EDF1CEB7D79001B8B51 /* User.swift in Sources */,
 				B3C9D4FB1CED0A3E00F77BAB /* KingdomsController.swift in Sources */,
 				B3C9D5011CED67A800F77BAB /* Kingdom.swift in Sources */,
-				B3D33EDB1CEB6F15001B8B51 /* UIColor+Hex.swift in Sources */,
 				B3D33EEB1CEBC705001B8B51 /* SignUpClient.swift in Sources */,
 				B3D33ED41CEB6CD9001B8B51 /* LoginController.swift in Sources */,
 				B3C9D4F91CED0A2500F77BAB /* KingdomCell.swift in Sources */,
@@ -346,6 +345,7 @@
 				B3D33EE11CEBAB01001B8B51 /* CommonUtil.swift in Sources */,
 				B3C9D4EF1CECD85A00F77BAB /* Constant.swift in Sources */,
 				B3D33EBD1CEB6C56001B8B51 /* AppDelegate.swift in Sources */,
+				F218BBEA1CEF6F0300C2952A /* BaseNavigationController.swift in Sources */,
 				B3C9D4F31CECE65600F77BAB /* UserDefaultsUtil.swift in Sources */,
 				B3D33EE31CEBAB9B001B8B51 /* StateUtil.swift in Sources */,
 			);
