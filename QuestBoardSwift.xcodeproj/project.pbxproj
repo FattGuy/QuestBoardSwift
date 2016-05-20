@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B3BB09951CEE0CD700C2A59D /* KingdomClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3BB09941CEE0CD700C2A59D /* KingdomClient.swift */; };
 		B3C9D4EF1CECD85A00F77BAB /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3C9D4EE1CECD85A00F77BAB /* Constant.swift */; };
 		B3C9D4F31CECE65600F77BAB /* UserDefaultsUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3C9D4F21CECE65600F77BAB /* UserDefaultsUtil.swift */; };
 		B3C9D4F91CED0A2500F77BAB /* KingdomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3C9D4F81CED0A2500F77BAB /* KingdomCell.swift */; };
@@ -31,6 +32,7 @@
 		1B8111441539E2B2FF1494A0 /* Pods-QuestBoardSwift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QuestBoardSwift.release.xcconfig"; path = "Pods/Target Support Files/Pods-QuestBoardSwift/Pods-QuestBoardSwift.release.xcconfig"; sourceTree = "<group>"; };
 		384A24F31A9BA02232458923 /* Pods-QuestBoardSwift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QuestBoardSwift.debug.xcconfig"; path = "Pods/Target Support Files/Pods-QuestBoardSwift/Pods-QuestBoardSwift.debug.xcconfig"; sourceTree = "<group>"; };
 		7817B2EA488E5F3676C13EDF /* Pods_QuestBoardSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_QuestBoardSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B3BB09941CEE0CD700C2A59D /* KingdomClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KingdomClient.swift; sourceTree = "<group>"; };
 		B3C9D4EE1CECD85A00F77BAB /* Constant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
 		B3C9D4F21CECE65600F77BAB /* UserDefaultsUtil.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserDefaultsUtil.swift; sourceTree = "<group>"; };
 		B3C9D4F81CED0A2500F77BAB /* KingdomCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KingdomCell.swift; sourceTree = "<group>"; };
@@ -192,6 +194,7 @@
 			isa = PBXGroup;
 			children = (
 				B3D33EEA1CEBC705001B8B51 /* SignUpClient.swift */,
+				B3BB09941CEE0CD700C2A59D /* KingdomClient.swift */,
 			);
 			name = Client;
 			sourceTree = "<group>";
@@ -327,6 +330,7 @@
 				B3D33ED41CEB6CD9001B8B51 /* LoginController.swift in Sources */,
 				B3C9D4F91CED0A2500F77BAB /* KingdomCell.swift in Sources */,
 				B3D33EF11CEBC9F2001B8B51 /* BaseHttpRequest.swift in Sources */,
+				B3BB09951CEE0CD700C2A59D /* KingdomClient.swift in Sources */,
 				B3D33EE11CEBAB01001B8B51 /* CommonUtil.swift in Sources */,
 				B3C9D4EF1CECD85A00F77BAB /* Constant.swift in Sources */,
 				B3D33EBD1CEB6C56001B8B51 /* AppDelegate.swift in Sources */,

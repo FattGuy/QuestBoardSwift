@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import SDWebImage
 
 class KingdomCell: UITableViewCell {
 
@@ -14,12 +15,14 @@ class KingdomCell: UITableViewCell {
     @IBOutlet weak var kNameLabel: UILabel!
     
     func setCellValue(kingdom: Kingdom) -> Void {
-        
+        self.kImageView.sd_setImageLoadOperation(kingdom.imageURL, forKey: "image")
     }
     
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
+        self.kImageView.layer.masksToBounds = true
+        self.kImageView.layer.cornerRadius = 25;
     }
 
     override func setSelected(selected: Bool, animated: Bool) {

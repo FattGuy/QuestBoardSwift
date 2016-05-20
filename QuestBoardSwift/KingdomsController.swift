@@ -7,9 +7,12 @@
 //
 
 import UIKit
+import SVProgressHUD
+import Gloss
 
 class KingdomsController: UITableViewController {
-
+    var kingdomList: Array<Kingdom> = []
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -18,6 +21,12 @@ class KingdomsController: UITableViewController {
 
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem()
+        
+        let user = User(name:"", email:"")
+        user.email = UserDefaultsUtil.getEmail()
+        self.navigationItem.title = user.email
+
+        self.loadData()
     }
 
     override func didReceiveMemoryWarning() {
@@ -25,18 +34,44 @@ class KingdomsController: UITableViewController {
         // Dispose of any resources that can be recreated.
     }
 
+    func loadData() -> Void {
+        
+        SVProgressHUD.setDefaultMaskType(SVProgressHUDMaskType.Black)
+        SVProgressHUD.showWithStatus("Loading")
+        
+        KingdomClient.getEmailList { (success) in
+            SVProgressHUD.dismiss()
+            
+            let kingdom = Kingdom(json: success as! JSON)
+            self.kingdomList.append(kingdom!)
+            
+            self.tableView.reloadData()
+        }
+        
+    }
+    
     // MARK: - Table view data source
 
     override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
-        return 0
+        return 1
     }
 
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return 0
+        return kingdomList.count
     }
 
+    @IBAction func logOutAction(sender: AnyObject) {
+        UserDefaultsUtil.saveEmail("")
+        
+        let loginController = UIStoryboard(name: "KingdomsController", bundle: nil).instantiateViewControllerWithIdentifier("LoginController") as UIViewController
+        //loginController.isFromLogOut = true;
+        self.navigationController?.presentViewController(loginController, animated: true, completion: { 
+            
+        })
+        
+    }
     /*
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier("reuseIdentifier", forIndexPath: indexPath)
