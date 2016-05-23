@@ -9,6 +9,7 @@
 import UIKit
 import SVProgressHUD
 import Gloss
+import SDWebImage
 
 class KingdomDetailController: UIViewController {
 
@@ -19,7 +20,7 @@ class KingdomDetailController: UIViewController {
     
     var selectedKingdomId: Int!
     var kingdomDetailList = KingdomDetail()
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -41,14 +42,31 @@ class KingdomDetailController: UIViewController {
             SVProgressHUD.dismiss()
             self!.kingdomDetailList = success as! KingdomDetail
             
-            self?.setUpTopRegion()
+            self!.setUpTopRegion()
+            self!.buildQuestView()
         }
     }
 
     func setUpTopRegion() -> Void {
         self.climateLabel.text = self.kingdomDetailList.climate
+        self.populationLabel.text = String(self.kingdomDetailList.population)
+        self.kImageView.sd_setImageWithURL(self.kingdomDetailList.imageURL)
+        
     }
     
+    func buildQuestView() -> Void {
+        let contentWidth = CGFloat((kingdomDetailList.quests!.count) * Int(kWinSize.width))
+        self.scrollView.contentSize = CGSizeMake(contentWidth, 350)
+        
+        for i in 0...(kingdomDetailList.quests!.count - 1) {
+            let questView = QuestView(frame: CGRectMake(kWinSize.width * CGFloat(i), 0, kWinSize.width, 350))
+            
+            questView.buildWithQuest(kingdomDetailList.quests![i])
+            
+            //self.scrollView.addSubview(questView)
+            self.view.addSubview(questView)
+        }
+    }
     /*
     // MARK: - Navigation
 

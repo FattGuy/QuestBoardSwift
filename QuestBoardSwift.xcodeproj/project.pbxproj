@@ -30,6 +30,10 @@
 		B3D33EF11CEBC9F2001B8B51 /* BaseHttpRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3D33EF01CEBC9F2001B8B51 /* BaseHttpRequest.swift */; };
 		DCA519A9924F215793105678 /* Pods_QuestBoardSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7817B2EA488E5F3676C13EDF /* Pods_QuestBoardSwift.framework */; };
 		F218BBEA1CEF6F0300C2952A /* BaseNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F218BBE91CEF6F0300C2952A /* BaseNavigationController.swift */; };
+		F2237D501CF348670047359F /* QuestView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F2237D4F1CF348670047359F /* QuestView.xib */; };
+		F2237D521CF348860047359F /* QuestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2237D511CF348860047359F /* QuestView.swift */; };
+		F2237D541CF3547C0047359F /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F2237D531CF3547C0047359F /* ImageIO.framework */; };
+		F2237D561CF3553B0047359F /* SDWebImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F2237D551CF3553B0047359F /* SDWebImage.framework */; };
 		F288FBD11CEF53B00004A719 /* SJModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F288FBD01CEF53B00004A719 /* SJModel.swift */; };
 		F2E01A441CEFAA27000D3423 /* KingdomDetailController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2E01A431CEFAA26000D3423 /* KingdomDetailController.swift */; };
 /* End PBXBuildFile section */
@@ -62,6 +66,10 @@
 		B3D33EEE1CEBC931001B8B51 /* APIInterface.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIInterface.swift; sourceTree = "<group>"; };
 		B3D33EF01CEBC9F2001B8B51 /* BaseHttpRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseHttpRequest.swift; sourceTree = "<group>"; };
 		F218BBE91CEF6F0300C2952A /* BaseNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseNavigationController.swift; sourceTree = "<group>"; };
+		F2237D4F1CF348670047359F /* QuestView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = QuestView.xib; sourceTree = "<group>"; };
+		F2237D511CF348860047359F /* QuestView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuestView.swift; sourceTree = "<group>"; };
+		F2237D531CF3547C0047359F /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
+		F2237D551CF3553B0047359F /* SDWebImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SDWebImage.framework; path = "../../../Library/Developer/Xcode/DerivedData/QuestBoardSwift-eubqhcrbfxhckcafexvqtmkpmrrs/Build/Products/Debug-iphonesimulator/SDWebImage/SDWebImage.framework"; sourceTree = "<group>"; };
 		F288FBD01CEF53B00004A719 /* SJModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SJModel.swift; sourceTree = "<group>"; };
 		F2E01A431CEFAA26000D3423 /* KingdomDetailController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KingdomDetailController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -71,6 +79,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F2237D561CF3553B0047359F /* SDWebImage.framework in Frameworks */,
+				F2237D541CF3547C0047359F /* ImageIO.framework in Frameworks */,
 				DCA519A9924F215793105678 /* Pods_QuestBoardSwift.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -81,6 +91,8 @@
 		74E0B142664094FC78D55B65 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				F2237D551CF3553B0047359F /* SDWebImage.framework */,
+				F2237D531CF3547C0047359F /* ImageIO.framework */,
 				7817B2EA488E5F3676C13EDF /* Pods_QuestBoardSwift.framework */,
 			);
 			name = Frameworks;
@@ -237,6 +249,8 @@
 		F2E01A451CEFB139000D3423 /* SwipeView */ = {
 			isa = PBXGroup;
 			children = (
+				F2237D4F1CF348670047359F /* QuestView.xib */,
+				F2237D511CF348860047359F /* QuestView.swift */,
 			);
 			name = SwipeView;
 			sourceTree = "<group>";
@@ -305,6 +319,7 @@
 				B3D33EC71CEB6C56001B8B51 /* LaunchScreen.storyboard in Resources */,
 				B3D33EC41CEB6C56001B8B51 /* Assets.xcassets in Resources */,
 				B3D33EC21CEB6C56001B8B51 /* Main.storyboard in Resources */,
+				F2237D501CF348670047359F /* QuestView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -376,6 +391,7 @@
 				B3D33EF11CEBC9F2001B8B51 /* BaseHttpRequest.swift in Sources */,
 				B3BB09951CEE0CD700C2A59D /* KingdomClient.swift in Sources */,
 				B3D33EE11CEBAB01001B8B51 /* CommonUtil.swift in Sources */,
+				F2237D521CF348860047359F /* QuestView.swift in Sources */,
 				B3CBE0241CF11CA10090A7A7 /* KingdomDetailClient.swift in Sources */,
 				B3C9D4EF1CECD85A00F77BAB /* Constant.swift in Sources */,
 				B3CBE0281CF11EAB0090A7A7 /* KingdomDetail.swift in Sources */,

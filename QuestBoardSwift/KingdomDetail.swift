@@ -15,7 +15,7 @@ class KingdomDetail: Decodable {
     var kingdomName: String?
     var imageURL: NSURL?
     var climate: String?
-    var population = Int?()
+    var population: Int?
     var quests: Array<Quest>?
     
     init() {
@@ -27,7 +27,7 @@ class KingdomDetail: Decodable {
         self.kingdomName = "name" <~~ json
         self.imageURL = "image" <~~ json
         self.climate = "climate" <~~ json
-        self.population = ("population" <~~ json)!
+        self.population = "population" <~~ json
         self.quests = "quests" <~~ json
     }
     
