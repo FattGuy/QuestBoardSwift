@@ -41,8 +41,6 @@ class LoginController: UIViewController, UITextViewDelegate {
         
         let state: SignUpState = CommonUtil.isValidEmail(user.email)
         
-        //let isFromLogOut: Bool = true
-        
         if state == SignUpState.Correct {
             SVProgressHUD.setDefaultMaskType(SVProgressHUDMaskType.Black)
             SVProgressHUD.show()

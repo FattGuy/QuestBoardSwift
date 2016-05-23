@@ -11,9 +11,9 @@ import Gloss
 
 class Kingdom: Decodable {
     
-    let kingdomId: Int?
-    let kingdomName: String?
-    let imageURL: NSURL?
+    var kingdomId: Int?
+    var kingdomName: String?
+    var imageURL: NSURL?
     
     required init?(json: JSON) {
         self.kingdomId = "id" <~~ json
@@ -26,6 +26,6 @@ class Kingdom: Decodable {
             "id" ~~> self.kingdomId,
             "name" ~~> self.kingdomName,
             "image" ~~> self.imageURL
-            ])
+        ])
     }
 }

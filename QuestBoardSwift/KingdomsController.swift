@@ -81,8 +81,8 @@ class KingdomsController: UITableViewController {
     }
  
     override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        self.performSegueWithIdentifier("KingdomDetailSegue", sender: indexPath)
         tableView.deselectRowAtIndexPath(indexPath, animated: true)
-
     }
 
     /*
@@ -129,12 +129,11 @@ class KingdomsController: UITableViewController {
         // Pass the selected object to the new view controller.
         if segue.identifier == "KingdomDetailSegue",
             let destination = segue.destinationViewController as? KingdomDetailController,
-            selectedIndex = tableView.indexPathForSelectedRow?.row
-            {
-                destination.navigationItem.title = kingdomList[selectedIndex].kingdomName
-               
-                self.performSegueWithIdentifier("KingdomDetailSegue", sender: nil)
-            }
+            selectedIndex = tableView.indexPathForSelectedRow?.row {
+            
+            destination.navigationItem.title = kingdomList[selectedIndex].kingdomName
+            destination.selectedKingdomId = kingdomList[selectedIndex].kingdomId
+        }
     }
 }
  

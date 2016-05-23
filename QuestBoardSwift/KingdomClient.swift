@@ -19,7 +19,7 @@ class KingdomClient: NSObject {
         let params: NSMutableDictionary = [:]
         
         BaseHttpRequest.shareInstance.myGET(Url, parameters: params) { (response) in
-            
+
             var mutArray = Array<Kingdom>()
             
             if response is Array <JSON> {
