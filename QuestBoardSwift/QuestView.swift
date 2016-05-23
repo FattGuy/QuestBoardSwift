@@ -48,8 +48,8 @@ class QuestView: UIView {
     }
     
     func loadViewFromNib() -> UIView {
-        let bundle = NSBundle(forClass: self.dynamicType)
-        let nib = UINib(nibName: "QuestView", bundle: bundle)
+        //let bundle = NSBundle(forClass: self.dynamicType)
+        let nib = UINib(nibName: "QuestView", bundle: nil)
         let view = nib.instantiateWithOwner(self, options: nil)[0] as! UIView
         
         return view
