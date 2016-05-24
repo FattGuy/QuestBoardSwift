@@ -12,13 +12,14 @@ class UserDefaultsUtil: NSObject {
     class func saveEmail(email: String) {
         let userDefaults = NSUserDefaults.standardUserDefaults()
         
-        userDefaults.setValue(email, forKey: "USER_EMAIL")
+        userDefaults.setValue(email, forKey: "USER_EMAIL")//(email, forKey: "USER_EMAIL")
         userDefaults.synchronize()
     }
     
     class func getEmail() -> String {
         let userDefaults = NSUserDefaults.standardUserDefaults()
+        let userEmail = userDefaults.objectForKey("USER_EMAIL") as? String ?? String()
         
-        return userDefaults.valueForKey("USER_EMAIL") as! String
+        return userEmail
     }
 }

@@ -11,8 +11,8 @@ import SVProgressHUD
 
 class LoginController: UIViewController, UITextViewDelegate {
 
-    @IBOutlet weak var nameTextField: UITextField!
-    @IBOutlet weak var emailTextField: UITextField!
+    @IBOutlet weak var nameTextField: UITextField?
+    @IBOutlet weak var emailTextField: UITextField?
     
     var isFromLogOut: Bool = false
     
@@ -32,14 +32,14 @@ class LoginController: UIViewController, UITextViewDelegate {
     
     
     @IBAction func textFieldReturn(sender: UITextField) {
-        self.nameTextField.resignFirstResponder()
-        self.emailTextField.resignFirstResponder()
+        self.nameTextField!.resignFirstResponder()
+        self.emailTextField!.resignFirstResponder()
     }
     
     @IBAction func submitInfoButton(sender: UIButton) {
-        let user = User(name: self.nameTextField.text!, email: self.emailTextField.text!)
+        let user = User(name: self.nameTextField!.text!, email: self.emailTextField!.text!)
         
-        let state: SignUpState = CommonUtil.isValidEmail(user.email)
+        let state: SignUpState = CommonUtil.isValidEmail(user.email!)
         
         if state == SignUpState.Correct {
             SVProgressHUD.setDefaultMaskType(SVProgressHUDMaskType.Black)
@@ -54,7 +54,7 @@ class LoginController: UIViewController, UITextViewDelegate {
                     self.performSegueWithIdentifier("SignUpSegue", sender: nil)
                 }
                 
-                UserDefaultsUtil.saveEmail(user.email)
+                UserDefaultsUtil.saveEmail(user.email!)
             })
         } else if state == SignUpState.EmptyEmail {
             SVProgressHUD.showErrorWithStatus("Email cannot be blank")
