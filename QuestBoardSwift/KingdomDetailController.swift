@@ -49,7 +49,7 @@ class KingdomDetailController: UIViewController {
 
     func setUpTopRegion() -> Void {
         self.climateLabel.text = self.kingdomDetailList.climate
-        self.populationLabel.text = String(self.kingdomDetailList.population)
+        self.populationLabel.text = String(self.kingdomDetailList.population!)
         self.kImageView.sd_setImageWithURL(self.kingdomDetailList.imageURL)
         
     }

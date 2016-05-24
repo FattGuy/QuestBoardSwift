@@ -336,12 +336,12 @@
                                             <exclude reference="OuN-Fc-rod"/>
                                         </mask>
                                         <mask key="constraints">
-                                            <exclude reference="ZWx-a9-7cH"/>
-                                            <exclude reference="gAN-qv-vPG"/>
-                                            <exclude reference="hph-pB-ofW"/>
                                             <exclude reference="6Z7-gk-tEb"/>
                                             <exclude reference="8V8-Zv-Sbz"/>
                                             <exclude reference="cQ8-a9-8Hq"/>
+                                            <exclude reference="ZWx-a9-7cH"/>
+                                            <exclude reference="gAN-qv-vPG"/>
+                                            <exclude reference="hph-pB-ofW"/>
                                         </mask>
                                     </variation>
                                     <variation key="widthClass=compact">
@@ -350,11 +350,11 @@
                                             <include reference="OuN-Fc-rod"/>
                                         </mask>
                                         <mask key="constraints">
-                                            <include reference="ZWx-a9-7cH"/>
-                                            <include reference="hph-pB-ofW"/>
                                             <include reference="6Z7-gk-tEb"/>
                                             <include reference="8V8-Zv-Sbz"/>
                                             <include reference="cQ8-a9-8Hq"/>
+                                            <include reference="ZWx-a9-7cH"/>
+                                            <include reference="hph-pB-ofW"/>
                                         </mask>
                                     </variation>
                                     <variation key="heightClass=regular-widthClass=compact">
@@ -441,14 +441,21 @@
                                     </mask>
                                 </variation>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="S6g-0v-vOb">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="S6g-0v-vOb">
                                 <rect key="frame" x="-42" y="-21" width="42" height="21"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="159" id="BZf-EX-j3d"/>
                                     <constraint firstAttribute="height" constant="21" id="EQk-sD-2jw"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                <color key="textColor" red="0.11764705882352941" green="0.67450980392156867" blue="0.9882352941176471" alpha="1" colorSpace="calibratedRGB"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="Label">
+                                        <attributes>
+                                            <color key="NSColor" red="0.11764705882352941" green="0.67450980392156867" blue="0.9882352941176471" alpha="1" colorSpace="calibratedRGB"/>
+                                            <font key="NSFont" size="20" name="HelveticaNeue"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
                                 <nil key="highlightedColor"/>
                                 <variation key="default">
                                     <mask key="constraints">
@@ -457,6 +464,7 @@
                                     </mask>
                                 </variation>
                                 <variation key="heightClass=regular-widthClass=compact">
+                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                     <mask key="constraints">
                                         <include reference="BZf-EX-j3d"/>
                                         <include reference="EQk-sD-2jw"/>
@@ -485,7 +493,7 @@
                                     </mask>
                                 </variation>
                             </label>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0UW-7R-FKO">
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" translatesAutoresizingMaskIntoConstraints="NO" id="0UW-7R-FKO">
                                 <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
                             </scrollView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IEZ-fp-d04">
@@ -494,7 +502,7 @@
                                     <constraint firstAttribute="width" constant="159" id="Vmd-pq-urI"/>
                                     <constraint firstAttribute="height" constant="21" id="hSR-FZ-Sba"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <color key="textColor" red="0.11764705882352941" green="0.67450980392156867" blue="0.9882352941176471" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                                 <variation key="default">
