@@ -56,15 +56,15 @@ class KingdomDetailController: UIViewController {
     
     func buildQuestView() -> Void {
         let contentWidth = CGFloat((kingdomDetailList.quests!.count) * Int(kWinSize.width))
-        self.scrollView.contentSize = CGSizeMake(contentWidth, 350)
+        self.scrollView.contentSize = CGSizeMake(contentWidth, 0)
         
         for i in 0...(kingdomDetailList.quests!.count - 1) {
-            let questView = QuestView(frame: CGRectMake(kWinSize.width * CGFloat(i), 0, kWinSize.width, 350))
+            let questView = QuestView.instanceFromNib()
+            questView.frame = CGRectMake(kWinSize.width * CGFloat(i), 0, kWinSize.width, 350)
             
             questView.buildWithQuest(kingdomDetailList.quests![i])
             
-            //self.scrollView.addSubview(questView)
-            self.view.addSubview(questView)
+            self.scrollView.addSubview(questView)
         }
     }
     /*

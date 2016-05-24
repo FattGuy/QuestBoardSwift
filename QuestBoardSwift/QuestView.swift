@@ -23,36 +23,8 @@ class QuestView: UIView {
         // Drawing code
     }
     */
-    var questView: QuestView!
-    
-    override init(frame: CGRect) {
-        super.init(frame: frame)
-        
-        xibSetUp()
-    }
-    
-    required init!(coder aDecoder: (NSCoder!)) {
-        super.init(coder: aDecoder)
-        
-        xibSetUp()
-    }
-    
-    func xibSetUp() {
-        questView = loadViewFromNib() as! QuestView
-        
-        // use bounds not frame or it'll be offset
-        questView.frame = bounds
-        
-        // Adding custom subview on top of our view (over any custom drawing > see note below)
-        addSubview(questView)
-    }
-    
-    func loadViewFromNib() -> UIView {
-        //let bundle = NSBundle(forClass: self.dynamicType)
-        let nib = UINib(nibName: "QuestView", bundle: nil)
-        let view = nib.instantiateWithOwner(self, options: nil)[0] as! UIView
-        
-        return view
+    static func instanceFromNib() -> QuestView {
+        return NSBundle.mainBundle().loadNibNamed("QuestView", owner: nil, options: nil)[0] as! QuestView
     }
     
     func buildWithQuest(quests: Quest) -> Void {
@@ -61,10 +33,10 @@ class QuestView: UIView {
         
         qImageView!.contentScaleFactor = UIScreen.mainScreen().scale
         qImageView!.contentMode = UIViewContentMode.ScaleAspectFill
-        qImageView!.autoresizingMask = UIViewAutoresizing.FlexibleHeight
+        qImageView!.autoresizingMask = [.FlexibleHeight, .FlexibleWidth]
         qImageView!.clipsToBounds = true
         
-        qImageView!.sd_setImageWithURL(quests.qImageURL)
+        qImageView!.sd_setImageWithURL(quests.qImageURL, placeholderImage: nil, options: SDWebImageOptions.ProgressiveDownload)
         
         qNameLabel!.text = quests.questName
         qDescription!.text = quests.questDescription

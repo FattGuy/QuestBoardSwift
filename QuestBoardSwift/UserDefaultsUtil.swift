@@ -19,6 +19,6 @@ class UserDefaultsUtil: NSObject {
     class func getEmail() -> String {
         let userDefaults = NSUserDefaults.standardUserDefaults()
         
-        return userDefaults.stringForKey("USER_EMAIL")!
+        return userDefaults.valueForKey("USER_EMAIL") as! String
     }
 }

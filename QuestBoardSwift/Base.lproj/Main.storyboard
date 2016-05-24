@@ -62,7 +62,7 @@
                                             </mask>
                                         </variation>
                                     </view>
-                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="chang809@umn.edu" placeholder="EMAIL" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="RPa-J9-S5n">
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="EMAIL" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="RPa-J9-S5n">
                                         <rect key="frame" x="-25" y="-30" width="97" height="30"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="17" id="x54-CJ-4B7"/>
@@ -106,7 +106,7 @@
                                             <action selector="submitInfoButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fal-tg-lbe"/>
                                         </connections>
                                     </button>
-                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="feng" placeholder="NAME" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="lLt-Dj-L6H">
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="NAME" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="lLt-Dj-L6H">
                                         <rect key="frame" x="-25" y="-30" width="97" height="30"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="17" id="oL0-3g-Jks"/>
@@ -277,25 +277,6 @@
                                     <rect key="frame" x="0.0" y="0.0" width="600" height="99.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="OuN-Fc-rod">
-                                            <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
-                                            <constraints>
-                                                <constraint firstAttribute="width" constant="50" id="Z0z-Cg-2a8"/>
-                                                <constraint firstAttribute="height" constant="50" id="z2D-XL-cSP"/>
-                                            </constraints>
-                                            <variation key="default">
-                                                <mask key="constraints">
-                                                    <exclude reference="Z0z-Cg-2a8"/>
-                                                    <exclude reference="z2D-XL-cSP"/>
-                                                </mask>
-                                            </variation>
-                                            <variation key="widthClass=compact">
-                                                <mask key="constraints">
-                                                    <include reference="Z0z-Cg-2a8"/>
-                                                    <include reference="z2D-XL-cSP"/>
-                                                </mask>
-                                            </variation>
-                                        </imageView>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="49G-pA-mNu">
                                             <rect key="frame" x="-42" y="-21" width="42" height="21"/>
                                             <constraints>
@@ -315,41 +296,65 @@
                                                 </mask>
                                             </variation>
                                         </label>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="OuN-Fc-rod">
+                                            <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="50" id="Z0z-Cg-2a8"/>
+                                                <constraint firstAttribute="height" constant="50" id="z2D-XL-cSP"/>
+                                            </constraints>
+                                            <variation key="default">
+                                                <mask key="constraints">
+                                                    <exclude reference="Z0z-Cg-2a8"/>
+                                                    <exclude reference="z2D-XL-cSP"/>
+                                                </mask>
+                                            </variation>
+                                            <variation key="widthClass=compact">
+                                                <mask key="constraints">
+                                                    <include reference="Z0z-Cg-2a8"/>
+                                                    <include reference="z2D-XL-cSP"/>
+                                                </mask>
+                                            </variation>
+                                        </imageView>
                                     </subviews>
                                     <constraints>
                                         <constraint firstItem="49G-pA-mNu" firstAttribute="leading" secondItem="OuN-Fc-rod" secondAttribute="trailing" constant="16" id="6Z7-gk-tEb">
-                                            <variation key="widthClass=compact" constant="16"/>
+                                            <variation key="widthClass=compact" constant="15"/>
                                         </constraint>
                                         <constraint firstAttribute="bottomMargin" secondItem="49G-pA-mNu" secondAttribute="bottom" constant="31.5" id="8V8-Zv-Sbz"/>
                                         <constraint firstItem="OuN-Fc-rod" firstAttribute="leading" secondItem="nYE-fy-HtI" secondAttribute="leading" constant="20" id="ZWx-a9-7cH">
-                                            <variation key="widthClass=compact" constant="20"/>
+                                            <variation key="widthClass=compact" constant="21"/>
                                         </constraint>
                                         <constraint firstAttribute="trailing" secondItem="49G-pA-mNu" secondAttribute="trailing" constant="8" id="cQ8-a9-8Hq"/>
                                         <constraint firstItem="OuN-Fc-rod" firstAttribute="centerY" secondItem="49G-pA-mNu" secondAttribute="centerY" id="gAN-qv-vPG"/>
+                                        <constraint firstItem="OuN-Fc-rod" firstAttribute="top" secondItem="nYE-fy-HtI" secondAttribute="top" id="hph-pB-ofW">
+                                            <variation key="widthClass=compact" constant="25"/>
+                                        </constraint>
                                     </constraints>
                                     <variation key="default">
                                         <mask key="subviews">
-                                            <exclude reference="OuN-Fc-rod"/>
                                             <exclude reference="49G-pA-mNu"/>
+                                            <exclude reference="OuN-Fc-rod"/>
                                         </mask>
                                         <mask key="constraints">
+                                            <exclude reference="ZWx-a9-7cH"/>
+                                            <exclude reference="gAN-qv-vPG"/>
+                                            <exclude reference="hph-pB-ofW"/>
                                             <exclude reference="6Z7-gk-tEb"/>
                                             <exclude reference="8V8-Zv-Sbz"/>
                                             <exclude reference="cQ8-a9-8Hq"/>
-                                            <exclude reference="ZWx-a9-7cH"/>
-                                            <exclude reference="gAN-qv-vPG"/>
                                         </mask>
                                     </variation>
                                     <variation key="widthClass=compact">
                                         <mask key="subviews">
-                                            <include reference="OuN-Fc-rod"/>
                                             <include reference="49G-pA-mNu"/>
+                                            <include reference="OuN-Fc-rod"/>
                                         </mask>
                                         <mask key="constraints">
+                                            <include reference="ZWx-a9-7cH"/>
+                                            <include reference="hph-pB-ofW"/>
                                             <include reference="6Z7-gk-tEb"/>
                                             <include reference="8V8-Zv-Sbz"/>
                                             <include reference="cQ8-a9-8Hq"/>
-                                            <include reference="ZWx-a9-7cH"/>
                                         </mask>
                                     </variation>
                                     <variation key="heightClass=regular-widthClass=compact">
@@ -378,7 +383,6 @@
                             </connections>
                         </barButtonItem>
                     </navigationItem>
-                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <segue destination="kF2-zC-pw0" kind="show" identifier="KingdomDetailSegue" id="16Q-MA-0pb"/>
                     </connections>
@@ -483,7 +487,6 @@
                             </label>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0UW-7R-FKO">
                                 <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
-                                <color key="backgroundColor" red="0.0" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                             </scrollView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IEZ-fp-d04">
                                 <rect key="frame" x="-42" y="-21" width="42" height="21"/>
